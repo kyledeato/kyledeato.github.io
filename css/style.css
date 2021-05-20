@@ -19,6 +19,11 @@ a {
 section{
     margin: 30px 30px;
 }
+.section-headings{
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
 /** HEADER **/
 header {
     text-align: right;
@@ -106,10 +111,7 @@ label {
     flex-flow: column;
     text-align: center;
 }
-.me h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
+
 .me p {
     font-size: 1.3em;
     line-height: 1.7;
