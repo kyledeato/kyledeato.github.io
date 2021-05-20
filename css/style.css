@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: "Norwester";
+    src: url(../font/norwester-webfont.woff)format("woff");
+    src: url(../font/norwester-webfont.woff2)format("woff");
+}
 body {
     background-color: #eae7dc;
     font-family: 'Playfair Display', serif;
@@ -11,16 +16,19 @@ a {
     list-style: none;
     text-decoration: none;
 }
-
+section{
+    margin: 30px 30px;
+}
 /** HEADER **/
 header {
-    
     text-align: right;
     height: 70px;
     line-height: 70px;
+    position: sticky;
 }
 .menu {
     margin: 0 30px 0 0;
+    
 }
 .menu a {
     color: black;
@@ -51,6 +59,63 @@ label {
     font-size: 22px;
     margin-left: 30px;
 }
+
+/** BANNER **/
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.img-container{
+    height: 300px;
+    width: 300px;
+    background-image: url(../images/pic.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.img-container img{
+    height: 100%;
+    width: 100%;
+}
+
+#hello{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    
+}
+#i-am, #kyle{
+    font-family: "Norwester";
+    font-size: 100px;
+}
+#i-am {
+    color: #e98074;
+}
+#kyle {
+    color: #e85a4f;
+}
+.img-container, .title {
+    padding: 20px;
+}
+
+/** ME **/
+.me {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+.me h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.me p {
+    font-size: 1.3em;
+    line-height: 1.7;
+    margin: 0 20%;
+}
+/** RESPONSIVE **/
 @media only screen and (max-width: 500px){
     label {
         display: block;
@@ -60,17 +125,27 @@ label {
         text-align: center;
         width: 100%;
         display: none;
+        
     }
     .menu a {
         display: block;
         border-bottom: 1px solid lightgray;
         margin: 0;
-        
+        background-color: #eae7dc;
+    }
+    #me-menu{
+        border-top: 1px solid lightgray;
     }
     header {
         border-bottom: 1px solid lightgray;
     }
     #toggle:checked + .menu{
         display: block;
+    }
+    .banner{
+        flex-flow: column-reverse;
+    }
+    .me p {
+        margin: 0 10px;
     }
 }
