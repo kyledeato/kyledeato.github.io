@@ -15,9 +15,9 @@
         <input type="checkbox" id="toggle">
         <div class="menu">
             <a href="#me" id="me-menu">me</a>
-            <a href="#">skills</a>
-            <a href="#">projects</a>
-            <a href="#">contact</a>
+            <a href="#skills">skills</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">contact</a>
         </div>
     </header>
 
@@ -27,45 +27,117 @@
             <div class="img-container">
             </div>
             <div class="title">
-                <p id="hello">HELLO HELLO</p>
-                <H1 id="i-am">I AM</H1>
-                <H1 id="kyle">KYLE</H1>
+                <p id="hello">HELLO HELLO MY NAME IS</p>
+                <H1 id="i-am">KYLE</H1>
+                <H1 id="kyle">DEATO</H1>
             </div>
         </section>
 
         <section id="me" class="me">
             <h2  class="section-headings">me</h2>
-            <p>Kyle is an up and coming web developer. He graduated in Cal State LA with a degree in Computer Information Systems, Information Technology.</p>
+            <p>Kyle Deato is an up and coming web developer. He graduated in Cal State LA with a degree in Computer Information Systems, Information Technology.</p>
             <br>
             <p>Kyle was first introduced in coding in high school, trying to make a simple browser game. In college, he was exposed to different type of work such as IT, data science, project management, GIS, etc. More importanly, he also took several coding classes in college like Java and Python, but focused more in Web Development. Currently, he is using Codecademy to add more to his arsenal of skills.</p>
             <br>
             <p>Some of Kyle's hobbies are basketball, swimming, taekwondo, and games. Kyle is a pretty chill and a hardworking dude to be honest. Kyle is also wondering why he is talking in third person writing about himself.</p>
         </section>
 
-        <section class="skills">
+        <section id="skills"class="skills">
             <h2 class="section-headings">skills</h2>
             <div class="skill-content">
-                <figure>
+                
+                <figure class="skill-img-container">
                     <img src="./images/html-logo.png" alt="html logo">
                     <figcaption>HTML5</figcaption>
                 </figure>
-                <figure>
-                    <img src="./images/css-logo.png" alt="css logo">
+                <figure class="skill-img-container">
+                    <img id="css-logo" src="./images/css-logo.png" alt="css logo">
                     <figcaption>CSS3</figcaption>
                 </figure>
-                <figure>
+                <figure class="skill-img-container">
                     <img src="./images/js-logo.png" alt="javascript logo">
                     <figcaption>JAVASCRIPT</figcaption>
                 </figure>
+                
+            </div>
+            <div class="skill-subcontent">
+                <h4>EXPOSED IN</h4>
+                <ul>
+                    <li>-Python</li>
+                    <li>-SQL</li>
+                    <li>-Java</li>
+                    <li>-Git</li>
+                    <li>-SAP</li>
+                    <li>-ArcGIS</li>
+                </ul>
             </div>
         </section>
 
-        <section class="projects">
+        <section id="projects"class="projects">
             <h2  class="section-headings">projects</h2>
+            <div class="project-container">
+                
+                <figure id="col1"class="project-box">
+                    <img src="./images/project-hitech.PNG" alt="hitech site">
+                    <figcaption>
+                        <p>A business website project with a working form.</p>
+                        <br>
+                        <p class="project-links">Site link: <a class="link" href="https://kyledeato.github.io/hitech_site/" target="_blank">https://kyledeato.github.io/hitech_site/</a></p>
+                        <br>
+                        <p class="project-links">Github link: <a class="link" href="https://github.com/kyledeato/hitech_site"target="_blank">https://github.com/kyledeato/hitech_site</a></p>
+                    </figcaption>
+                </figure>
+                <figure id="col2" class="project-box">
+                    <img src="./images/project-swim.png" alt="hitech site">
+                    <figcaption>
+                        <p>A club webpage project using grid css.</p>
+                        <br>
+                        <p class="project-links">Site link: <a class="link" href="https://kyledeato.github.io/hitech_site/" target="_blank">https://kyledeato.github.io/swimClub/</a></p>
+                        <br>
+                        <p class="project-links">Github link: <a class="link" href="https://github.com/kyledeato/swimClub" target="_blank">https://github.com/kyledeato/swimClub</a></p>
+                    </figcaption>
+                </figure>
+                <figure id="col1" class="project-box">
+                    <img src="./images/project-hitech.PNG" alt="hitech site">
+                    <figcaption>
+                        <p class="project-links">Site link: <a class="link" href="https://kyledeato.github.io/hitech_site/" target="_blank">https://kyledeato.github.io/hitech_site/</a></p>
+                        <br>
+                        <p class="project-links">Github link: <a class="link" href="https://github.com/kyledeato/hitech_site" target="_blank">https://github.com/kyledeato/hitech_site</a></p>
+                    </figcaption>
+                </figure>
+                <figure  class="project-box">
+                    <img src="./images/project-hitech.PNG" alt="hitech site">
+                    <figcaption>
+                        <p class="project-links">Site link: <a class="link" href="https://kyledeato.github.io/hitech_site/" target="_blank">https://kyledeato.github.io/hitech_site/</a></p>
+                        <br>
+                        <p class="project-links">Github link: <a class="link" href="https://github.com/kyledeato/hitech_site" target="_blank">https://github.com/kyledeato/hitech_site</a></p>
+                    </figcaption>
+                </figure>
+                
+            </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <h2  class="section-headings">contact</h2>
+            <h4>go ahead and click them, you know you want to.</h4>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <img src="./images/icons8-email-50.png" alt="email icon">
+                    <p><a href="mailto:kyledeato@gmail.com"> kyledeato@gmail.com</a></p>
+                </div>
+                <div class="contact-box">
+                    <img src="./images/icons8-linkedin-24.png" alt="linked in logo">
+                    <p><a href="www.linkedin.com/in/kyle-deato-216768208" target="_blank"> Connect with me!</a></p>
+                </div>
+                <div class="contact-box">
+                    <img src="./images/icons8-github-24.png" alt="github logo">
+                    <p><a href="https://github.com/kyledeato" target="_blank">My Github link</a></p>
+                </div>
+                <div class="contact-box">
+                    <img src="./images/icons8-submit-resume-48.png" alt="email icon">
+                    <p><a href="./pdf/KyleDeatoResume (1) (1).pdf" download="">Download my resume, its free!</a></p>
+                </div>
+            </div>
         </section>
     </main>
 </body>
