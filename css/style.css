@@ -50,7 +50,8 @@ header {
     clear: right;
 }
 .menu a:hover{
-    font-weight: 800;
+    font-weight: 700;
+    transition: 0.3s;
 }
 label {
     margin: 0 40px 0 0;
@@ -147,6 +148,7 @@ label {
 }
 .skill-img-container img:hover{
     transform: scale(1.1);
+    transition: 0.3s;
 }
 .skill-img-container img{
     max-width: 100%;
@@ -179,6 +181,11 @@ figcaption {
     width: 100px;
     padding: 10px;
 }
+
+.mid {
+    display: flex;
+    align-items: center;
+}
 /** PROJECTS **/
 
 .project-container{
@@ -207,6 +214,33 @@ figcaption {
     width: 100%; 
     font-size: 20px;
 
+}
+figcaption p {
+    line-height: normal;
+}
+
+/* BUTTON */
+.button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: 2px solid #e85a4f;
+    background-color: #eae7dc;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    padding: 5px;
+}
+#more-button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    font-weight: 500;
 }
 
 /** CONTACT **/
